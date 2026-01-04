@@ -37,10 +37,9 @@ const Pagination = () => {
   }, []);
 
   const handlePrevious = () => {
-    const handlePrevious = () => {
-      setCurrentPage((prev) => Math.max(prev - 1, 1));
-    };
+    setCurrentPage((prev) => Math.max(prev - 1, 1));
   };
+
   const handleNext = () => {
     if (currentPage < totalPages) {
       setCurrentPage((prev) => prev + 1);
